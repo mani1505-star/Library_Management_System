@@ -238,26 +238,6 @@ CREATE DATABASE librarydb;
 USE librarydb;
 ```
 
-### Tables Auto-Created
-Tables are automatically created by `JdbcLibraryRepository` on first run:
-
-```sql
-CREATE TABLE users (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    name VARCHAR(150) NOT NULL UNIQUE
-);
-
-CREATE TABLE books (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    title VARCHAR(255) NOT NULL,
-    author VARCHAR(255) NOT NULL,
-    available BOOLEAN NOT NULL,
-    issuedToUserId INT,
-    issueDate DATE,
-    CONSTRAINT fk_user FOREIGN KEY (issuedToUserId) 
-        REFERENCES users(id) ON DELETE SET NULL
-);
-```
 
 ---
 
@@ -287,37 +267,9 @@ javac *.java
 java Main
 ```
 
-### Issue: How to clear all data?
-**Solution (CSV mode):**
-```bash
-rm books.csv users.csv
-```
-**Solution (MySQL mode):**
-```sql
-TRUNCATE TABLE books;
-TRUNCATE TABLE users;
-```
-
----
-
-
-
-
----
-
-## 📄 License
-
-This project is open source and available under the **MIT License**.
-
 ---
 
 ## 👨‍💻 Author
 
 Your Name  
-GitHub: [Mani Singh]
-
----
-
-**Last Updated:** March 26, 2026  
-**Java Version:** 8+  
-**Status:** ✅ Production Ready
+GitHub: [Mani Singh] (https://github.com/mani1505-star/Library_Management_System.git)
