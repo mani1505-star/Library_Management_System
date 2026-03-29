@@ -270,6 +270,7 @@ java Main
 ---
 
 ## 👨‍💻 Author
+Logic Assisted by AI (ChatGPT, Claude)
 
 Your Name  
 GitHub: [Mani Singh] (https://github.com/mani1505-star/Library_Management_System.git)
